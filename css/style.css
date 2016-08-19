@@ -1,0 +1,461 @@
+/* Open Sans Web font */
+@font-face{
+  font-family:'Josefin Sans'; font-style: normal; font-weight:400;
+  src:local('Josefin Sans'),local('JosefinSans'),
+      url('../font/JosefinSans-Light.woff') format('woff');}
+@font-face{
+  font-family:'Josefin Sans'; font-style: normal; font-weight:600;
+  src:local('Josefin Sans Semibold'),local('JosefinSans-Semibold'),
+      url('../font/JosefinSans-Semibold.woff') format('woff');}
+@font-face{
+  font-family:'Josefin Sans'; font-style: normal; font-weight:700;
+  src:local('Josefin Sans Bold'),local('JosefinSans-Bold'),
+      url('../font/JosefinSans-Bold.woff') format('woff');}
+@font-face{
+  font-family:'Josefin Sans'; font-style:italic; font-weight:400;
+  src:local('Josefin Sans Italic'),local('JosefinSans-Italic'),
+      url('../font/JosefinSans-Italic.woff') format('woff');}
+
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	display: block;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+.clear {
+	clear: both;
+}
+
+.main-container {
+	height: 100%;
+}
+
+.main-container .background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.left {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	color: black;
+}
+
+.left .left-part-content,
+.right .right-part-content {
+	width: 100%;
+	height: 400%;
+}
+
+.right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	color: white;
+}
+
+.main-container .background .left {
+	background-color: white;
+}
+
+.main-container .background .right {
+	background-color: black;
+}
+
+.main-container .background .left,
+.main-container .background .right {
+	height: 100%;
+}
+
+.content {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: hidden;
+	z-index: 10;
+}
+
+.menu {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	top: 50px;
+}
+
+.left .menu {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.right .menu {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.menu .menu-buttons {
+	display: table;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.menu .menu-buttons .menu-item {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 240px;
+	cursor: pointer;
+	float: none;
+}
+
+.data-container {
+	position: relative;
+	top: 60px;
+}
+
+.left .menu .menu-buttons {
+	margin-left: auto;
+}
+
+.right .menu .menu-buttons {
+	margin-right: auto;
+}
+
+.left .menu .menu-buttons .menu-item:hover,
+.right .menu .menu-buttons .menu-item:hover {
+	font-weight: 600;
+}
+
+.about-me,
+.hobby,
+.proffesion,
+.expiriense {
+	height: 25%;
+	overflow: hidden;
+}
+
+.left .about-me .data-container,
+.left .hobby .data-container,
+.left .proffesion .data-container,
+.left .expiriense .data-container {
+	width: 300px;
+	margin: 40px auto;
+}
+
+.left .about-me .data-container .my-foto img,
+.left .proffesion .data-container .proffesion-icon img {
+	width: 300px;
+	border-radius: 50%;
+}
+
+.left .about-me .data-container .short-info {
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: black;
+	text-align: center;
+}
+
+.left .about-me .data-container .position img {
+	width: 55px;
+}
+
+.left .about-me .data-container .position {
+	width: 210px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.left .about-me .data-container .position .text {
+	display: inline-block;
+	margin-top: 17px;
+	margin-bottom: 10px;
+}
+
+.left .about-me .data-container .position .ico {
+	display: inline-block;
+	float: right;
+}
+
+.left .about-me .data-container .contacts {
+	display: inline-block;
+	margin: 10px auto;
+	float: right;
+}
+
+.left .about-me .data-container .contacts .contact {
+	height: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.left .about-me .data-container .contacts .contact .value {
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.left .about-me .data-container .contacts .contact img {
+	height: 100%;
+}
+
+.left .hobby .data-container .title {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.left .hobby .data-container .gallery-buttons {
+	width: 300px;
+	height: 300px;
+}
+
+.left .hobby .data-container .gallery-buttons .gallery-button {
+	width:50%;
+	height: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+.left .hobby .data-container .gallery-buttons .gallery-button img {
+	width: 70%;
+	overflow: hidden;
+	-webkit-transition: width 0.5s;
+	-moz-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.left .hobby .data-container .gallery-buttons .selected img,
+.left .hobby .data-container .gallery-buttons .gallery-button img:hover {
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,1);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,1);
+}
+
+.left .proffesion .data-container .proffesion-icon img {
+	border-radius: 50%;
+
+}
+
+.left .hobby .data-container .view-more .label {
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.left .hobby .data-container .view-more .label,
+.left .hobby .data-container .view-more .icon {
+	display: inline-block;
+	height: 30px;
+	float: left;
+}
+
+.left .hobby .data-container .view-more .icon img {
+	width: 30px;
+}
+
+.left .expiriense .data-container {
+	padding-top: 30px;
+}
+
+.left .expiriense .data-container .company-logo {
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.left .expiriense .data-container .company-logo img {
+	width: 100%;
+}
+
+.cyan img {
+	border: 4px solid #B2086F;
+	border-radius: 50%;
+}
+
+.blue img {
+	border: 4px solid #040971;
+	border-radius: 50%;
+}
+
+.yellow img {
+	border: 4px solid #CD9505;
+	border-radius: 50%;
+}
+
+.green img {
+	border: 4px solid #208305;
+	border-radius: 50%;
+}
+
+.right .about-me .data-container,
+.right .hobby .data-container,
+.right .proffesion .data-container,
+.right .expiriense .data-container {
+	width: 90%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right .about-me .data-container,
+.right .expiriense .data-container {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.right .about-me .data-container h1 {
+	font-size: 20px;
+}
+
+.right .about-me .data-container {
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.right .about-me .data-container .summary-container,
+.right .about-me .data-container .education-container {
+	margin-left: 20px;
+}
+
+.right .about-me .data-container .education-container .university {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px; 
+	font-weight: 600;
+}
+
+.right .about-me .data-container .education-container .department p {
+	margin-left: 10px;
+	margin-top: 0px;
+}
+
+.right .hobby .data-container h1 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 20px;
+	color: #B2086F;
+}
+
+.project {
+	width: 100%;
+	margin-bottom: 10px;
+
+	border: 1px solid #000;
+
+	-webkit-transition: border-color 200ms linear;
+       -moz-transition: border-color 200ms linear;
+         -o-transition: border-color 200ms linear;
+        -ms-transition: border-color 200ms linear;
+            transition: border-color 200ms linear;
+}
+
+.highlighted-project {
+	border-color: #fff;
+}
+
+.project .project-title,
+.project .project-description {
+	display: inline-block;
+}
+
+.project .project-title {
+	width: 30%;
+	float: left;
+}
+
+.project .project-title .project-name {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: right;
+}
+
+.project .project-title .duration {
+	font-size: 12px;
+	text-align: right;
+}
+
+.project .project-title .duration .from {
+	width: 45%;
+	display: inline-block;
+	float: left;
+}
+
+.project .project-title .duration .to {
+	width: 45%;
+	display: inline-block;
+	float: right;
+}
+
+.project .project-title .duration .from .year,
+.project .project-title .duration .to .year {
+	font-size: 24px;
+}
+
+.project .empty-space {
+	width: 5%;
+	float: left;
+}
+
+.project .project-description {
+	width: 65%;
+	float: left;
+	text-align: justify;
+}
+
+#gellery-background {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#hobby-gallery-blue,
+#hobby-gallery-cyan,
+#hobby-gallery-yellow,
+#hobby-gallery-green {
+	display: none;
+	overflow: hidden;
+}
+
+.box {
+	overflow: hidden;
+}
+
+#proffession-container {
+	font-size: 14px;
+}
+
+#proffession-container .skills-column {
+	padding: 5px;
+}
+
+#proffession-container .skills-column .skill-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}

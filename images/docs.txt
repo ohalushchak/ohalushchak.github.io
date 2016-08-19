@@ -1,0 +1,22 @@
+Live server(old)
+administrator
+77.73.100.86
+paFo1uBy7MNAw9ul
+
+Live server(new)
+Public IP 54.77.105.61
+User name Administrator
+Password 5LEcBu?q77W
+
+Dev server(LMMR1.5)
+IP 54.77.76.18
+User name Administrator
+Password Q#})8b#No3R
+
+https://sonar.lmmr.be:9000
+admin
+305G3n4049bqD3MQtFnN
+
+web dev tomcat manager
+username lmmr-web-admin
+password 9e96629805

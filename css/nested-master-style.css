@@ -1,0 +1,30 @@
+.box { 	
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+  -moz-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+  -ms-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+  -o-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+  transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+
+  -webkit-transition-property: left, right, top;
+  -moz-transition-property: left, right, top;
+  -ms-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
+}
+
+.size11 img, .size12 img, .size13 img,
+.size22 img, .size23 img,
+.size33 img {
+  height: 100%;
+}
+
+.size21 img,
+.size31 img, .size32 img {
+  width: 100%;
+}
+
+.size11 img, .size12 img, .size13 img,
+.size21 img, .size22 img, .size23 img,
+.size31 img, .size32 img, .size33 img {
+  margin: 3px;
+}
