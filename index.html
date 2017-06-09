@@ -140,9 +140,6 @@
 								<div class="company-logo softserve-logo">
 									<img src="images/softserve.jpg">
 								</div>
-								<div class="company-logo softserve-university-logo">
-									<img src="images/softserve-university.jpg">
-								</div>
 							</div>
 						</div>
 					</div>
@@ -161,6 +158,28 @@
 								</div>
 							</div>
 							<div class="data-container">
+								<div id="spotlight" class="project">
+									<div class="project-title">
+										<div class="project-name">
+											Spika - Spotlight
+										</div>
+										<div class="duration">
+											<div class="from">
+												<div>November</div>
+												<div class="year">2016</div>
+											</div>
+											<div class="to">
+												<div>&nbsp</div>
+												<div class="year">Current</div>
+											</div>
+										</div>
+									</div>
+									<div class="empty-space">&nbsp</div>
+									<div class="project-description">
+										Spotlight is embedded software for manage users and campaigns.
+									</div>
+									<div class="clear"></div>
+								</div>
 								<div id="book2meet" class="project">
 									<div class="project-title">
 										<div class="project-name">
@@ -172,8 +191,8 @@
 												<div class="year">2014</div>
 											</div>
 											<div class="to">
-												<div>&nbsp</div>
-												<div class="year">Current</div>
+												<div>October</div>
+												<div class="year">2016</div>
 											</div>
 										</div>
 									</div>
@@ -205,50 +224,6 @@
 									</div>
 									<div class="clear"></div>
 								</div>
-								<div id="tbms" class="project">
-									<div class="project-title">
-										<div class="project-name">
-											SoftServe - TBMS
-										</div>
-										<div class="duration">
-											<div class="from">
-												<div>September</div>
-												<div class="year">2012</div>
-											</div>
-											<div class="to">
-												<div>December</div>
-												<div class="year">2012</div>
-											</div>
-										</div>
-									</div>
-									<div class="empty-space">&nbsp</div>
-									<div class="project-description">
-										Training project designed to implement an own web application for time bank management system. Project supports MVC design model with using Sping MVC framework, hibernate and J2EE. The goal of project was create web application with authorization, authentication, role system, ordering, administrating, validation and localization functions, also it included all necessary views for users, registered users, admins, receptions, managers and directors with requirements functional specification.
-									</div>
-									<div class="clear"></div>
-								</div>
-								<div id="web-server" class="project">
-									<div class="project-title">
-										<div class="project-name">
-											SoftServe - Web server
-										</div>
-										<div class="duration">
-											<div class="from">
-												<div>August</div>
-												<div class="year">2012</div>
-											</div>
-											<div class="to">
-												<div>September</div>
-												<div class="year">2012</div>
-											</div>
-										</div>
-									</div>
-									<div class="empty-space">&nbsp</div>
-									<div class="project-description">
-										Training project designed to implement an own Web server. Web server supports HTTP request and response processing, XML-configuration, multi-request processing using threads, file handling, admin page.
-									</div>
-									<div class="clear"></div>
-								</div>
 							</div>
 						</div>
 						<div class="proffesion">
@@ -266,15 +241,15 @@
 								<div id="proffession-container">
 									<div class="skills-column">
 										<div class="skill-title"><u>Programming Languages/ Technologies</u></div>
-										<div class="skills">Java, JavaScript, C/C++, C#, Pascal, Python, UML, RMI/JNDI, SOAP, Servlets, Web Services, JQuery, AJAX, HTML, XML, JSON, REGEXP, CSS, JSF, JSP, JSTL, CDI/EJB</div>
+										<div class="skills">Java, SOAP, JavaScript, HTML, XML, JSON, CSS, JSP/JSTL, Docker</div>
 									</div>
 									<div class="skills-column">
 										<div class="skill-title"><u>Frameworks</u></div>
-										<div class="skills">Hibernate, JUnit, Spring, RichFaces, Mockito, ApacheCXF, Ant, Maven, AngularJS, ReactJS, Grunt</div>
+										<div class="skills">Hibernate, Spring, Maven, ReactJS, Grunt, JQuery</div>
 									</div>
 									<div class="skills-column">
 										<div class="skill-title"><u>Development Tools</u></div>
-										<div class="skills">Eclipse & Plug-ins, Intellij IDEA, MSSQL Management Studio, SQL Developer (for Oracle DB), Tortoise SVN, SOAP UI, iReport (Jasper Report), Log4J / SLF4J, Jira, JMeter</div>
+										<div class="skills">Eclipse & Plug-ins, Intellij IDEA, SOAP UI, iReport (Jasper Report), Jira, Git, SVN, AWS</div>
 									</div>
 									<div class="skills-column">
 										<div class="skill-title"><u>Application/Web Servers</u></div>
@@ -286,15 +261,11 @@
 									</div>
 									<div class="skills-column">
 										<div class="skill-title"><u>RDBMS</u></div>
-										<div class="skills">MS SQL, My SQL, Postgres SQL, Oracle DB</div>
+										<div class="skills">MS SQL, My SQL, Oracle DB</div>
 									</div>
 									<div class="skills-column">
 										<div class="skill-title"><u>NoSQL DB</u></div>
-										<div class="skills">Mongo DB, Elastic Search</div>
-									</div>
-									<div class="skills-column">
-										<div class="skill-title"><u>Design</u></div>
-										<div class="skills">Photoshop, Bridge, Illustrator, Premiera, AfterEffects, DreamWeaver, Lightroom, Photoshop Elements</div>
+										<div class="skills">Mongo DB</div>
 									</div>
 								</div>
 							</div>
@@ -481,7 +452,6 @@
 				$currentGallery = $cyanGallery,
 				minWidth = Math.floor($currentGallery.width()/9);
 
-			console.log(minWidth);
 			$(function() {
 				galleries.push($blueGallery);
 				galleries.push($cyanGallery);
@@ -501,24 +471,19 @@
 				if($(this).hasClass('nix-logo')) {
 					$("#book2meet").clearQueue().queue(function (next) {
 						$(this).addClass('highlighted-project'); next();
-					}).delay(200).queue(function (next) {
+					}).delay(300).queue(function (next) {
+						$(this).removeClass('highlighted-project'); next();
+					});
+					spotlight
+					$("#spotlight").clearQueue().queue(function (next) {
+						$(this).addClass('highlighted-project'); next();
+					}).delay(300).queue(function (next) {
 						$(this).removeClass('highlighted-project'); next();
 					});
 				} else if($(this).hasClass('softserve-logo')) {
 					$("#e-front").clearQueue().queue(function (next) {
 						$(this).addClass('highlighted-project'); next();
-					}).delay(200).queue(function (next) {
-						$(this).removeClass('highlighted-project'); next();
-					});
-				} else if($(this).hasClass('softserve-university-logo')) {
-					$("#tbms").clearQueue().queue(function (next) {
-						$(this).addClass('highlighted-project'); next();
-					}).delay(200).queue(function (next) {
-						$(this).removeClass('highlighted-project'); next();
-					});
-					$("#web-server").clearQueue().queue(function (next) {
-						$(this).addClass('highlighted-project'); next();
-					}).delay(200).queue(function (next) {
+					}).delay(300).queue(function (next) {
 						$(this).removeClass('highlighted-project'); next();
 					});
 				}
