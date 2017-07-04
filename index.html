@@ -442,8 +442,7 @@
 		<script type="text/javascript">
 			var currentPage = 1,
 				$gallery = $('#gellery-background'),
-				$box = $('.box'),
-				gutter = 0
+				gutter = 0,
 				$blueGallery = $('#hobby-gallery-blue'),
 				$cyanGallery = $('#hobby-gallery-cyan'),
 				$yellowGallery = $('#hobby-gallery-yellow'),
@@ -474,7 +473,6 @@
 					}).delay(300).queue(function (next) {
 						$(this).removeClass('highlighted-project'); next();
 					});
-					spotlight
 					$("#spotlight").clearQueue().queue(function (next) {
 						$(this).addClass('highlighted-project'); next();
 					}).delay(300).queue(function (next) {
@@ -512,16 +510,16 @@
 			$( window ).resize(function() {
 				resizeGallery();
 				var docHeight = $('.content').height();
-				if(currentPage == 1) {
+				if(currentPage === 1) {
 					$('.left-part-content').css('margin-top', '' + 0 * docHeight + 'px');
 					$('.right-part-content').css('margin-top', '' + -3 * docHeight + 'px');
-				} else if(currentPage == 2) {
+				} else if(currentPage === 2) {
 					$('.left-part-content').css('margin-top', '' + -1 * docHeight + 'px');
 					$('.right-part-content').css('margin-top', '' + -2 * docHeight + 'px');
-				} else if(currentPage == 3) {
+				} else if(currentPage === 3) {
 					$('.left-part-content').css('margin-top', '' + -2 * docHeight + 'px');
 					$('.right-part-content').css('margin-top', '' + -1 * docHeight + 'px');
-				} else if(currentPage == 4) {
+				} else if(currentPage === 4) {
 					$('.left-part-content').css('margin-top', '' + -3 * docHeight + 'px');
 					$('.right-part-content').css('margin-top', '' + 0 * docHeight + 'px');
 				}
