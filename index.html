@@ -134,6 +134,9 @@
 								</div>
 							</div>
 							<div class="data-container">
+								<div class="company-logo intelliarts-logo">
+									<img src="images/intelliarts-logo.jpg">
+								</div>
 								<div class="company-logo nix-logo">
 									<img src="images/n-ix.jpg">
 								</div>
@@ -158,6 +161,28 @@
 								</div>
 							</div>
 							<div class="data-container">
+								<div id="evconnect" class="project">
+									<div class="project-title">
+										<div class="project-name">
+											EVConnect
+										</div>
+										<div class="duration">
+											<div class="from">
+												<div>June</div>
+												<div class="year">2017</div>
+											</div>
+											<div class="to">
+												<div>&nbsp</div>
+												<div class="year">Current</div>
+											</div>
+										</div>
+									</div>
+									<div class="empty-space">&nbsp</div>
+									<div class="project-description">
+										EV Cloud is a simple, cloud-based, charging-network management platform that provides ultimate flexibility and resource control.
+									</div>
+									<div class="clear"></div>
+								</div>
 								<div id="spotlight" class="project">
 									<div class="project-title">
 										<div class="project-name">
@@ -169,8 +194,8 @@
 												<div class="year">2016</div>
 											</div>
 											<div class="to">
-												<div>&nbsp</div>
-												<div class="year">Current</div>
+												<div>June</div>
+												<div class="year">2017</div>
 											</div>
 										</div>
 									</div>
@@ -484,6 +509,12 @@
 					}).delay(300).queue(function (next) {
 						$(this).removeClass('highlighted-project'); next();
 					});
+				} else if ($(this).hasClass('intelliarts-logo')) {
+                    $("#evconnect").clearQueue().queue(function (next) {
+                        $(this).addClass('highlighted-project'); next();
+                    }).delay(300).queue(function (next) {
+                        $(this).removeClass('highlighted-project'); next();
+                    });
 				}
 			});
 
